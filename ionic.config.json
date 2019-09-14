@@ -1,0 +1,7 @@
+{
+  "name": "vkitApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
