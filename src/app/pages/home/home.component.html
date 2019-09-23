@@ -1,52 +1,188 @@
-<ion-menu side="start" menuId="first" content-id="content">
-  <ion-header>
-    <ion-toolbar color="primary">
-      <ion-title>Start Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
-    <ion-list>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-    </ion-list>
-  </ion-content>
-</ion-menu>
+<!-- <ion-header class="header-main">
+  <ion-navbar color="dark">
+    <ion-title>
+    {{userData.email}}
+    </ion-title>
+    <ion-buttons>
+	    <button ion-button clear (click)="logout()">
+	      	<ion-icon name="md-exit"></ion-icon>
+	    </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header> -->
 
-<ion-menu side="start" menuId="custom" class="my-custom-menu" content-id="content">
-  <ion-header>
-    <ion-toolbar color="tertiary">
-      <ion-title>Custom Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
-    <ion-list>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-    </ion-list>
-  </ion-content>
-</ion-menu>
+<ion-header class="header-main" style=" background: deepskyblue;">
+  <div style="display: inline-flex;"> 
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+  
+    <ion-title >
+    <p class="color-txt">VKIT</p>
+    </ion-title>
+   
+  </div>
+</ion-header>
 
-<ion-menu side="end" type="push" content-id="content">
-  <ion-header>
-    <ion-toolbar color="danger">
-      <ion-title>End Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
-    <ion-list>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-    </ion-list>
-  </ion-content>
-</ion-menu>
+      
+          
+  
+  
 
 
+
+<ion-content padding class="bg-img">
+
+<ion-grid>
+  <ion-card style="yheight: 107px;">
+      <ion-slides pager="true" [options]="slideOpts" >
+          <ion-slide>
+            <img src="../../../assets/imgs/slide1.jpg">
+          </ion-slide>
+          <ion-slide>
+              <img src="../../../assets/imgs/slide 2.jpg">
+            </ion-slide>
+            <ion-slide>
+                <img src="../../../assets/imgs/slide 3.jpg">
+              </ion-slide>
+              <ion-slide>
+                  <img src="../../../assets/imgs/slide 4.jpg">
+                </ion-slide>
+                <ion-slide>
+                    <img src="../../../assets/imgs/slide 5.jpg">
+                  </ion-slide>
+                  <ion-slide>
+                      <img src="../../../assets/imgs/slide 6.jpg">
+                    </ion-slide>
+                    
+          
+        </ion-slides>
+  </ion-card>
+</ion-grid>    
+<!-- 
+  <h2></h2><ion-card>
+    <mat-tab-group>
+
+      <mat-tab label="Courses">
+      </mat-tab>
+      <mat-tab label="Activity">
+      </mat-tab>
+      
+      <mat-tab label="About Us">
+      </mat-tab>
+    </mat-tab-group>   
+    
+    
+    <mat-tab-group>
+    
+      <mat-tab label="Courses">
+      </mat-tab>
+      <mat-tab label="Activity">
+      </mat-tab>
+      
+      <mat-tab label="About Us">
+      </mat-tab>
+    </mat-tab-group>
+    
+    <mat-tab-group>
+    
+      <mat-tab label="Courses">
+      </mat-tab>
+      <mat-tab label="Activity">
+      </mat-tab>
+      
+      <mat-tab label="About Us">
+      </mat-tab>
+    </mat-tab-group> -->
+        <!-- <mat-tab-group  class="demo-tab-group">
+          <mat-tab label="Tab 1">
+            <div class="demo-tab-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+              Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+              In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+              feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+              orci enim rutrum enim, vel tempor sapien arcu a tellus.
+            </div>
+          </mat-tab>
+          
+          <mat-tab label="Tab 2">
+            No content  
+          </mat-tab>
+          
+        </mat-tab-group> -->
+    
+  <!-- </ion-card> -->
+     
+
+  
+
+
+
+
+
+
+
+
+<ion-grid class="grid">
+
+  <mat-grid-list cols="3" rowHeight="1:1"class="list1">
+    <mat-grid-tile><img src="../../../assets/icon/scholarship.png"alt="Courses" (click)="goToCourses()" layout-fill></mat-grid-tile>
+    <mat-grid-tile><img src="../../../assets/icon/conversation.png"alt="about" layout-fill></mat-grid-tile>
+    <mat-grid-tile><img src="../../../assets/icon/mortarboard.png"alt="about" layout-fill></mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-list cols="3" rowHeight="1:1"class="list2">
+    <mat-grid-tile><img src="../../../assets/icon/school (1).png"alt="about" layout-fill></mat-grid-tile>
+    <mat-grid-tile><img src="../../../assets/icon/student.png"alt="about" layout-fill></mat-grid-tile>
+    <mat-grid-tile><img src="../../../assets/icon/bookshelf.png"alt="about" layout-fill></mat-grid-tile>
+    
+  </mat-grid-list>
+  <mat-grid-list cols="3" rowHeight="1:1"class="list3">
+    <mat-grid-tile><img src="../../../assets/icon/school.png"alt="about" layout-fill></mat-grid-tile>
+    <mat-grid-tile>courses</mat-grid-tile>
+    <mat-grid-tile>about</mat-grid-tile>
+    
+  </mat-grid-list>
+</ion-grid>
+
+
+<!-- <ion-card>
+
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="assets/images/_bg.jpg">
+    </ion-avatar>
+    <h2>Dr. Lorem Ipsum</h2>
+    <p>June 28, 1990</p>
+  </ion-item>
+
+  <img src="assets/images/guitar.jpg">
+
+  <ion-card-content>
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button color="primary" clear small icon-start>
+        <ion-icon name='thumbs-up'></ion-icon>
+        46 Likes
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button color="primary" clear small icon-start>
+        <ion-icon name='text'></ion-icon>
+        66 Comments
+      </button>
+    </ion-col>
+    <ion-col align-self-center text-center>
+      <ion-note>
+        2d ago
+      </ion-note>
+    </ion-col>
+  </ion-row>
+
+</ion-card> -->
+
+
+
+</ion-content>

@@ -1,0 +1,190 @@
+
+<ion-header class="header-main" style=" background: deepskyblue;"*ngIf="courses">
+    <div style="display: inline-flex;width:100%;" > 
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+    
+      <ion-title >
+      <p class="color-txt">COURSES</p>
+      </ion-title>
+      <button ion-button icon-only (click)="backToHome()">
+        <ion-icon name="arrow-back"></ion-icon>
+    </button>
+    </div>
+  </ion-header>
+
+  <ion-content  fullscreen padding class="bg-img" *ngIf="courses">
+
+
+<!-- 
+    <mat-accordion >
+        <mat-expansion-panel >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              B.Tech
+            </mat-panel-title>
+            <mat-panel-description>
+              Affiliated to AKTU
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+      
+          <ion-card style="overflow-y:scroll; height:350px">
+              <img src="../../../assets/imgs/course1.jpg" />
+              <ion-card-header>
+                <ion-card-subtitle>Duration:4 Years</ion-card-subtitle>
+                <ion-card-title>Branches:CSE,ME,CE,EE</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores officia veritatis tenetur aut hic a repellat delectus ab facere est sit illo sunt, nihil vero distinctio esse. Placeat molestias dolore fugit aperiam possimus explicabo cum, quasi quam soluta tempora minima quod nihil voluptas aut consequatur, reiciendis corrupti similique necessitatibus provident.
+              </ion-card-content>
+            </ion-card>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Polytechnic
+            </mat-panel-title>
+            <mat-panel-description>
+                Affiliated to  BTU
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <ion-card style="overflow-y:scroll; height:350px">
+              <img src="../../../assets/imgs/course1.jpg" />
+              <ion-card-header>
+                <ion-card-subtitle>Duration:4 Years</ion-card-subtitle>
+                <ion-card-title>Branches:,ME,CE</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores officia veritatis tenetur aut hic a repellat delectus ab facere est sit illo sunt, nihil vero distinctio esse. Placeat molestias dolore fugit aperiam possimus explicabo cum, quasi quam soluta tempora minima quod nihil voluptas aut consequatur, reiciendis corrupti similique necessitatibus provident.
+              </ion-card-content>
+            </ion-card>
+        </mat-expansion-panel>
+        
+        <mat-expansion-panel >
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                B.Tech
+              </mat-panel-title>
+              <mat-panel-description>
+                Affiliated to AKTU
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+        
+            <ion-card style="overflow-y:scroll; height:350px">
+                <img src="../../../assets/imgs/course1.jpg" />
+                <ion-card-header>
+                  <ion-card-subtitle>Duration:4 Years</ion-card-subtitle>
+                  <ion-card-title>Branches:CSE,ME,CE,EE</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores officia veritatis tenetur aut hic a repellat delectus ab facere est sit illo sunt, nihil vero distinctio esse. Placeat molestias dolore fugit aperiam possimus explicabo cum, quasi quam soluta tempora minima quod nihil voluptas aut consequatur, reiciendis corrupti similique necessitatibus provident.
+                </ion-card-content>
+              </ion-card>
+          </mat-expansion-panel>
+          <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Polytechnic
+              </mat-panel-title>
+              <mat-panel-description>
+                  Affiliated to  BTU
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <ion-card style="overflow-y:scroll; height:350px">
+                <img src="../../../assets/imgs/course1.jpg" />
+                <ion-card-header>
+                  <ion-card-subtitle>Duration:4 Years</ion-card-subtitle>
+                  <ion-card-title>Branches:ME,CE</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores officia veritatis tenetur aut hic a repellat delectus ab facere est sit illo sunt, nihil vero distinctio esse. Placeat molestias dolore fugit aperiam possimus explicabo cum, quasi quam soluta tempora minima quod nihil voluptas aut consequatur, reiciendis corrupti similique necessitatibus provident.
+                </ion-card-content>
+              </ion-card>
+          </mat-expansion-panel>
+      </mat-accordion> -->
+    
+     
+
+      <ion-list >
+        
+              <ion-item button (click)="showDetail()">
+                <ion-icon slot="start" name="" ></ion-icon>
+                <ion-label>
+                  <h3>B.Tech</h3>
+                </ion-label>
+              </ion-item>
+              <ion-item button (click)="showDetail()">
+                  <ion-icon slot="start" name="" ></ion-icon>
+                  <ion-label>
+                    <h3>Polytechnic</h3>
+                  </ion-label>
+                </ion-item>
+                <ion-item button (click)="showDetail()">
+                    <ion-icon slot="start" name="" ></ion-icon>
+                    <ion-label>
+                      <h3>B.Pharma</h3>
+                    </ion-label>
+                  </ion-item>
+                  <ion-item button (click)="showDetail()">
+                      <ion-icon slot="start" name="" ></ion-icon>
+                      <ion-label>
+                        <h3>BBA</h3>
+                      </ion-label>
+                    </ion-item>
+                    <ion-item button (click)="showDetail()">
+                        <ion-icon slot="start" name="" ></ion-icon>
+                        <ion-label>
+                          <h3>B.com</h3>
+                        </ion-label>
+                      </ion-item>
+                      <ion-item button (click)="showDetail()">
+                          <ion-icon slot="start" name="" ></ion-icon>
+                          <ion-label>
+                            <h3>B.sc</h3>
+                          </ion-label>
+                        </ion-item>
+                        <ion-item button (click)="showDetail()">
+                            <ion-icon slot="start" name="" ></ion-icon>
+                            <ion-label>
+                              <h3>B.ED</h3>
+                            </ion-label>
+                          </ion-item>
+          </ion-list>
+  </ion-content>
+
+
+   <!-- details -->
+          <ion-header class="header-main" style=" background: deepskyblue;"*ngIf="details">
+            <div style="display: inline-flex;width: 100%;"> 
+                <button ion-button menuToggle>
+                    <ion-icon name="menu"></ion-icon>
+                  </button>
+            
+              <ion-title >
+              <p class="color-txt">Details</p>
+              </ion-title>
+               <button ion-button icon-only (click)="back()">
+                <ion-icon name="arrow-back"></ion-icon>
+            </button>
+            </div>
+         
+           
+          </ion-header>
+
+
+         
+          <ion-content  fullscreen padding class="bg-img" *ngIf="details">
+ <ion-card style="overflow-y:scroll; height:500px;background:aliceblue" >
+                <img src="../../../assets/imgs/course1.jpg" />
+                <ion-card-header>
+                  <ion-card-subtitle>Duration:4 Years</ion-card-subtitle>
+                  <ion-card-title>Branches:ME,CE</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores officia veritatis tenetur aut hic a repellat delectus ab facere est sit illo sunt, nihil vero distinctio esse. Placeat molestias dolore fugit aperiam possimus explicabo cum, quasi quam soluta tempora minima quod nihil voluptas aut consequatur, reiciendis corrupti similique necessitatibus provident.
+                </ion-card-content>
+              </ion-card>
+  </ion-content>

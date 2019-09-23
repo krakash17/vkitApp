@@ -1,3 +1,62 @@
+.bg-img{
+    --background: url('../../../assets/images/bg.jpg')  0 0/100% 100% no-repeat;
+}
+
+
+.grid{
+	height: 336px;
+}
+.mat-grid-tile{
+
+border: 1px solid lightgray;
+background-color: honeydew;
+border-radius: 51px;
+
+}
+.list1{
+	margin-bottom:4%;
+}
+.list2{
+	margin-bottom:4%;
+}
+.list2{
+	margin-bottom:4%;
+}
+page-home {
+	.header-main {
+		background-color: black !important;
+	}
+
+	.grid{
+		height: 336px;
+	}
+	.mat-grid-tile{
+
+	border: 1px solid lightgray;
+    background-color: honeydew;
+	border-radius: 46px;
+	}
+	.toolbar-ios {
+		ion-title {
+			left: 50%;
+			display: block;
+			margin: 0 auto;
+			
+			width: auto;
+			
+			p {
+				margin: 12px 0;
+			}
+		}
+	}
+	.header-btn{
+		margin-left: -35px !important;
+		color: #FFF !important;
+	}
+	.color-txt{
+		color: #FFF !important;
+	}
+}
 .my-custom-menu {
-    --width: 500px;
-  }
+  --width: 500px;
+}
