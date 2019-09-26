@@ -1,7 +1,12 @@
-.bg-img{
-    --background: url('../../../assets/images/bg.jpg')  0 0/100% 100% no-repeat;
-}
-
+// .bg-img{
+//     --background: url('../../../assets/images/bg.jpg')  0 0/100% 100% no-repeat;
+// }
+:host {
+	ion-content {
+		--background: linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary));
+	}
+  }
+  
 
 .grid{
 	height: 336px;

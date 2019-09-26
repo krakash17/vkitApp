@@ -2,6 +2,7 @@ import { Component, OnInit, } from '@angular/core';
 import { MenuController,IonicModule} from '@ionic/angular';
 import { MatTabsModule } from '@angular/material';
 import { ActivatedRoute,Router } from '@angular/router';
+import {NavbarComponent} from '../../components/navbar/navbar.component';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,7 +10,7 @@ import { ActivatedRoute,Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   
-  constructor(public menu: MenuController,
+  constructor( public menuCtrl: MenuController,
     private route:ActivatedRoute,private router:Router) { }
 
   ngOnInit() {}
@@ -23,6 +24,12 @@ export class HomeComponent implements OnInit {
   };
   goToCourses(){
     this.router.navigateByUrl('/courses')
+  }
+  goToAbout(){
+    this.router.navigateByUrl('/about')
+  }
+  toggleMenu() {
+    this.menuCtrl.toggle(); //Add this method to your button click function
   }
   
   

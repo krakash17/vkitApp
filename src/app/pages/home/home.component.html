@@ -10,31 +10,60 @@
     </ion-buttons>
   </ion-navbar>
 </ion-header> -->
-
+<!-- <ion-menu>
+  <ion-header>
+    <ion-toolbar color="primary" text-center>
+     
+      <div style="display: inline-flex;"> 
+        <div>
+          <ion-button (click)="toggleMenu()"> <ion-icon name="menu"></ion-icon></ion-button>
+        </div>
+        <ion-title>VKIT</ion-title>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle auto-hide="false" >
+        <ion-item [routerDirection]="'root'" >
+          <ion-icon slot="start"></ion-icon>
+          <ion-label>
+           Home
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-router-outlet main></ion-router-outlet>
 <ion-header class="header-main" style=" background: deepskyblue;">
+  
   <div style="display: inline-flex;"> 
-      <button ion-button menuToggle>
-          <ion-icon name="menu"></ion-icon>
-        </button>
+    <div>
+      <ion-button (click)="toggleMenu()"> <ion-icon name="menu"></ion-icon></ion-button>
+    </div>
+     
   
     <ion-title >
     <p class="color-txt">VKIT</p>
     </ion-title>
    
   </div>
-</ion-header>
+</ion-header> -->
+
+
 
       
           
   
   
 
+<app-navbar></app-navbar>
 
-
-<ion-content padding class="bg-img">
+<ion-content padding class="animated fadeIn home">
 
 <ion-grid>
-  <ion-card style="yheight: 107px;">
+  <ion-card style="height: 107px;">
       <ion-slides pager="true" [options]="slideOpts" >
           <ion-slide>
             <img src="../../../assets/imgs/slide1.jpg">
@@ -127,7 +156,7 @@
 
   <mat-grid-list cols="3" rowHeight="1:1"class="list1">
     <mat-grid-tile><img src="../../../assets/icon/scholarship.png"alt="Courses" (click)="goToCourses()" layout-fill></mat-grid-tile>
-    <mat-grid-tile><img src="../../../assets/icon/conversation.png"alt="about" layout-fill></mat-grid-tile>
+    <mat-grid-tile><img src="../../../assets/icon/conversation.png"alt="about"(click)="goToAbout()" layout-fill></mat-grid-tile>
     <mat-grid-tile><img src="../../../assets/icon/mortarboard.png"alt="about" layout-fill></mat-grid-tile>
   </mat-grid-list>
   <mat-grid-list cols="3" rowHeight="1:1"class="list2">
