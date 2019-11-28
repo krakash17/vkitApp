@@ -8,11 +8,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { HomeComponent } from './pages/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { Tab1Component } from '../app/components/tabs/tab1.component';
 import { CoursesComponent} from './pages/courses/courses.component';
 import { MatTabsModule,MatExpansionModule,MatIconModule } from '@angular/material';
 import {MatGridListModule} from '@angular/material/grid-list';
-import {NavbarComponent} from '../app/components/navbar/navbar.component';
+
 import {AboutComponent} from '../app/pages/about/about.component'
 
 
@@ -28,7 +28,7 @@ const appRoutes: Routes = [
 ]
 
 @NgModule({
-  declarations: [AppComponent,HomeComponent,CoursesComponent,NavbarComponent,AboutComponent],
+  declarations: [AppComponent,HomeComponent,CoursesComponent,AboutComponent,Tab1Component],
   entryComponents: [],
   imports: [BrowserModule,MatGridListModule,MatExpansionModule, MatIconModule,IonicModule.forRoot(),MatTabsModule, 
     BrowserAnimationsModule,IonicModule,AppRoutingModule,LoginPageModule,

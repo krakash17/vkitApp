@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {NavbarComponent} from '../../components/navbar/navbar.component';
+import { ActivatedRoute,Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-about',
@@ -8,8 +9,11 @@ import {NavbarComponent} from '../../components/navbar/navbar.component';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
+  backToHome(){
+    this.router.navigateByUrl('/home');
+  }
   ngOnInit() {}
 
 }

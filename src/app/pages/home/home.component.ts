@@ -2,7 +2,7 @@ import { Component, OnInit, } from '@angular/core';
 import { MenuController,IonicModule} from '@ionic/angular';
 import { MatTabsModule } from '@angular/material';
 import { ActivatedRoute,Router } from '@angular/router';
-import {NavbarComponent} from '../../components/navbar/navbar.component';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -30,6 +30,10 @@ export class HomeComponent implements OnInit {
   }
   toggleMenu() {
     this.menuCtrl.toggle(); //Add this method to your button click function
+  }
+  logout(){
+    localStorage.clear;
+    this.router.navigateByUrl('')
   }
   
   
